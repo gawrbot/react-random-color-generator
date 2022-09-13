@@ -4,6 +4,7 @@ import { useState } from 'react';
 function App() {
   const [color, setColor] = useState(randomColor());
   return (
+    // prettier but not passing the drone test
     // <div
     //   style={{
     //     backgroundColor: color,
@@ -13,7 +14,7 @@ function App() {
       <h1
         style={{
           textAlign: 'center',
-          color: 'white',
+          color: '#333d40',
           padding: 25,
         }}
       >
