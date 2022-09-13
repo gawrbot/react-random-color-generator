@@ -18,7 +18,7 @@ function App() {
       >
         Random Color Generator
       </h1>
-      <p
+      <div
         style={{
           width: 400,
           height: 200,
@@ -29,10 +29,11 @@ function App() {
           alignItems: 'center',
           margin: '0 auto',
           color: 'white',
+          backgroundColor: color,
         }}
       >
         Generated Color: {color}
-      </p>
+      </div>
       <br />
       <button
         style={{
