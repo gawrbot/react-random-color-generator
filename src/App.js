@@ -6,32 +6,40 @@ function App() {
   return (
     <div
       style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
         backgroundColor: color,
       }}
     >
+      <h1
+        style={{
+          textAlign: 'center',
+          color: 'white',
+          padding: 25,
+        }}
+      >
+        Random Color Generator
+      </h1>
       <div
         style={{
           width: 400,
           height: 200,
-          margin: '0 auto',
+          fontSize: 25,
+          borderRadius: 25,
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          fontSize: 30,
-          borderRadius: 25,
+          margin: '0 auto',
+          color: 'white',
         }}
       >
         Generated Color: {color}
       </div>
+      <br />
       <button
         style={{
-          margin: '0 auto',
-          display: 'flex',
+          display: 'block',
           justifyContent: 'center',
           fontSize: 15,
+          margin: '0 auto',
         }}
         onClick={() => {
           setColor(randomColor());
@@ -39,6 +47,8 @@ function App() {
       >
         Generate
       </button>
+      <br />
+      <br />
     </div>
   );
 }
