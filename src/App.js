@@ -4,11 +4,12 @@ import { useState } from 'react';
 function App() {
   const [color, setColor] = useState(randomColor());
   return (
-    <div
-      style={{
-        backgroundColor: color,
-      }}
-    >
+    // <div
+    //   style={{
+    //     backgroundColor: color,
+    //   }}
+    // >
+    <>
       <h1
         style={{
           textAlign: 'center',
@@ -50,7 +51,8 @@ function App() {
       </button>
       <br />
       <br />
-    </div>
+    </>
+    // </div>
   );
 }
 
